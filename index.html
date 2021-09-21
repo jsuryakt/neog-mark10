@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css"/>
+    <title>Cash Register Manager</title>
+</head>
+<body>
+  <header>
+      <h1>Cash Register Manager</h1>
+      <p>Get to know the exact change to return</p>
+      <label for="bill-amount">Bill Amount</label>
+      <input id="bill-amount"/>
+      <label for="cash-given">Cash Given</label>
+      <input id="cash-given"/>
+      <div>
+      <button id="btn-calculate">Calculate</button>
+    </div>
+      <p id="p-info">Return Change</p>
+      <table>
+          <tr>
+              <th>No Of Notes</th>
+              <td class="no-of-notes">0</td>
+              <td class="no-of-notes">0</td>
+              <td class="no-of-notes">0</td>
+              <td class="no-of-notes">0</td>
+              <td class="no-of-notes">0</td>
+              <td class="no-of-notes">0</td>
+              <td class="no-of-notes">0</td>
+          </tr>
+          <tr>
+            <th>Note</th>
+            <td>2000</td>
+            <td>500</td>
+            <td>100</td>
+            <td>20</td>
+            <td>10</td>
+            <td>5</td>
+            <td>1</td>
+        </tr>
+      </table>
+
+      <p id="p-words"></p>
+  </header>  
+
+  <script src="main.js"></script>
+</body>
+</html>
