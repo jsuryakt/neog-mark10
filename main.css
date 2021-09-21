@@ -49,15 +49,18 @@ div {
     font-weight: bold;
 }
 
-table {
+.container {
     margin: auto;
-    margin-top: 2rem;
-    /* border-radius: 0.5rem; */
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    margin: 2rem 0rem;
     border-collapse: collapse;
-    /* border: 2px solid var(--primary-color); */
 }
 
 th,td {
-    padding: 0.5rem;
+    padding: 0.3rem;
     border: 2px solid var(--primary-color);
 }
