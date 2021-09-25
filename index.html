@@ -13,9 +13,9 @@
       <h1>Cash Register Manager</h1>
       <p>Get to know the exact change to return</p>
       <label for="bill-amount">Bill Amount</label>
-      <input id="bill-amount"/>
+      <input id="bill-amount" onkeypress="return !(event.charCode == 46)" min="1" />
       <label for="cash-given">Cash Given</label>
-      <input id="cash-given"/>
+      <input id="cash-given" onkeypress="return !(event.charCode == 46)" min="1" />
       <div>
       <button id="btn-calculate">Calculate</button>
     </div>
