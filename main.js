@@ -13,10 +13,14 @@ function validate(number) {
     return !isNaN(number) && number.trim().length > 0;
 }
 
+function nonZero(number) {
+    return Number(number) >= 0;
+}
+
 function onClickCalculate() {
     amount = billAmount.value;
     given = cashGiven.value;
-    if ((validate(amount)) && (validate(given))) {
+    if (validate(amount) && validate(given) && nonZero(amount) && nonZero(given)) {
         amount = parseInt(amount);
         given = parseInt(given);
         if (given >= amount) {
